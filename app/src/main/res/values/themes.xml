@@ -1,9 +1,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MusicCreater" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.MusicCreator" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.MusicCreater" parent="Base.Theme.MusicCreater" />
+    <style name="Theme.MusicCreator" parent="Base.Theme.MusicCreator" />
+
+    <style name="Theme.MusicCreator.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Background for splash + status bar -->
+        <item name="android:windowBackground">@color/splash</item>
+        <item name="android:statusBarColor">@color/splash</item>
+        <!-- Important: white icons on dark bar -->
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Draw behind system bars -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">false</item>
+
+        <!-- Optional: match nav bar color -->
+        <item name="android:navigationBarColor">@color/splash</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+
 </resources>
